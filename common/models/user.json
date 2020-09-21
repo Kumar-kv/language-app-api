@@ -1,0 +1,35 @@
+{
+  "name": "user",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "f_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "number"
+    },
+    "l_name": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "created_on": {
+      "type": "date"
+    },
+    "updated_on": {
+      "type": "date"
+    },
+    "gender": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

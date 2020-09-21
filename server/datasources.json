@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "language-app-api": {
+    "host": "",
+    "port": 0,
+    "url": "",
+    "database": "language-app-api",
+    "password": "",
+    "name": "language-app-api",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
