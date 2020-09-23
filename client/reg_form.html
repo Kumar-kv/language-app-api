@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="reg_form.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="reg_form.js"></script>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container regform" id="fcontainer">
+        <div class="card">
+            <div class="card-title">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        Registration Form
+                    </div>
+                    <div class="col-md-1 togglebtn">
+                        <i class="fa fa-bars" aria-hidden="true" onclick="onToggle()"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <p id="err_msg"></p>
+                <form onsubmit="onSubmit(event); return false" id="r_form">
+                    <div class="row">
+                        <label for="name">Name : </label>
+                        <input type="text" id="fname" placeholder="Enter First Name">
+                        <span class="ml-3 mr-3"></span>
+                        <input type="text" id="lname" placeholder="Enter Last Name">
+                    </div>
+                    <div class="row">
+                        <label for="email">Email : </label>
+                        <input type="email" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="row">
+                        <label for="phone">Phone : </label>
+                        <input type="number" id="ac" placeholder="Enter Area Code">
+                        <span class="ml-3 mr-3"></span>
+                        <input type="number" id="phone" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="dob">DOB : </label>
+                            <input type="date" id="dob">
+                        </div>
+                        <div>
+                            <label for="country">Country : </label>
+                            <select id="country">
+                                <option value="" disabled selected>Select A Country</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div style="width: 60%;">
+                                <label for="gender" id="genders">Gender : </label>
+                                <br>
+                                <br>
+                                <label for="pic">Upload : </label>
+                                <input type="file" accept="image/*" onchange="onUpload(event)">
+                        </div>
+                        <div style="text-align: center;width: 40%;display: table;">
+                            <div class="imgdiv">
+                                <img id="uimg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button class="btn btn-primary" type="submit" id="r_btn">Register</button>
+                        <span class="ml-3 mr-3"></span>
+                        <button class="btn btn-danger" type="button" onclick="onClear()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container tablecontainer" id="tcontainer">
+        <div class="card">
+            <div class="card-title">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        User Details
+                    </div>
+                    <div class="col-md-1 togglebtn">
+                        <i class="fa fa-bars" aria-hidden="true" onclick="onToggle()"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table" id="utable">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>DOB</th>
+                            <th>Country</th>
+                            <th>Gender</th>
+                            <th>Image</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
