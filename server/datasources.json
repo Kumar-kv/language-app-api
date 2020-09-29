@@ -13,5 +13,24 @@
     "user": "",
     "useNewUrlParser": true,
     "connector": "mongodb"
+  },
+  "sendEmail": {
+    "name": "sendEmail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "noreplytomailservice@gmail.com",
+          "pass": "suthra@123"
+        }
+      }
+    ]
   }
 }

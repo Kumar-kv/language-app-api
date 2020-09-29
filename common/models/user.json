@@ -5,6 +5,7 @@
   "options": {
     "validateUpsert": true
   },
+  "emailVerificationRequired":true,
   "properties": {
     "f_name": {
       "type": "string"
