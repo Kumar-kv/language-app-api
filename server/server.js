@@ -9,6 +9,13 @@ const loopback = require('loopback');
 const boot = require('loopback-boot');
 
 const app = module.exports = loopback();
+var path = require('path');
+var bodyParser = require("body-parser");
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(loopback.token());
 
 app.start = function() {
   // start the web server
