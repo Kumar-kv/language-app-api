@@ -40,7 +40,11 @@
     "dataSource": "language-app-api",
     "public": true
   },
-  "Email":{
+  "Email": {
     "dataSource": "sendEmail"
+  },
+  "numbers": {
+    "dataSource": "language-app-api",
+    "public": true
   }
 }

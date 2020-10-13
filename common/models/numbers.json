@@ -1,0 +1,26 @@
+{
+  "name": "numbers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "english": {
+      "type": "string",
+      "required": true
+    },
+    "target_translation": {
+      "type": "object",
+      "required": true
+    },
+    "createdOn": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
