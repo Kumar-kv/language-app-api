@@ -19,7 +19,7 @@
     "dob": {
       "type": "date"
     },
-    "created_on": {
+    "createdOn": {
       "type": "date"
     },
     "updated_on": {
