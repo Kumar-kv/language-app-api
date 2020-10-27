@@ -16,7 +16,8 @@
     },
     "createdOn": {
       "type": "date",
-      "required": true
+      "required": true,
+      "default": "$now"
     }
   },
   "validations": [],
