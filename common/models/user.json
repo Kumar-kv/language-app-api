@@ -20,9 +20,10 @@
       "type": "date"
     },
     "createdOn": {
-      "type": "date"
+      "type": "date",
+      "default":"$now"
     },
-    "updated_on": {
+    "updatedOn": {
       "type": "date"
     },
     "gender": {
